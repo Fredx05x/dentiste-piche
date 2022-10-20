@@ -31,21 +31,16 @@ function NavBar() {
     >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <Box
-            justifyContent={'space-between'}
-            sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}
-          >
-            <div style={{ display: 'flex', width: '175px' }}>
-              <IconButton
-                size="large"
-                aria-label="account of current user"
-                aria-controls="menu-appbar"
-                aria-haspopup="true"
-                onClick={handleOpenNavMenu}
-              >
-                <MenuIcon />
-              </IconButton>
-            </div>
+          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+            <IconButton
+              size="large"
+              aria-label="account of current user"
+              aria-controls="menu-appbar"
+              aria-haspopup="true"
+              onClick={handleOpenNavMenu}
+            >
+              <MenuIcon />
+            </IconButton>
             <Menu
               id="menu-appbar"
               anchorEl={anchorElNav}
@@ -105,8 +100,12 @@ function NavBar() {
                 </MenuItem>
               </Link>
             </Menu>
-            <img className="logo" src={Logo} alt="logo"></img>
-            <div style={{ visibility: 'hidden', width: '175px' }}></div>
+            <img
+              style={{ marginLeft: '10%' }}
+              className="logo"
+              src={Logo}
+              alt="logo"
+            ></img>
           </Box>
           <Box
             justifyContent={'center'}
