@@ -7,7 +7,7 @@ import './main.css'
 function Main() {
   return (
     <div className="main-container">
-      <div id="main">
+      <div className="navbar-container" id="main">
         <NavBar />
       </div>
       <div id="assistances">
